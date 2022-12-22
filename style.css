@@ -1,0 +1,306 @@
+html{
+    background-color: #ffff;
+    font-size: 1.2rem;
+}
+
+/* HEADER - LOGO + NAV */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 15rem;
+}
+    .logo{
+        display: inline-block;
+    }
+        .logo > img {
+            height: 3rem;
+        }
+    
+    .navigation{
+        display: inline-block;
+        margin-top: 1.5rem;
+    }
+
+        .navigation > a{
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            color: rgb(3, 3, 3);
+            text-decoration: none;
+        }
+
+        .navigation > a:hover {
+            text-decoration: underline;
+        }
+/* HEADER - LOGO + NAV */
+
+/* SECTION-1 - VIDEO */
+#section-1 {
+    width:80%;
+    margin-left: 10%;
+}
+/* SECTION-1 - VIDEO */
+
+/* SECTION-2 - ABOUT US */
+#section-2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+    .text-box {
+        line-height: 2rem;
+        color: #3b4964;
+        background-color: rgb(255, 255, 255);
+        height: 25rem;
+        width: 35rem;
+        margin-top: 11rem;
+        margin-right: 3rem;
+    }
+
+            .text-box > h1 {
+                margin-top: 1rem;
+                font-size: 2rem;
+                color: #caa880;
+                margin-bottom: 0.7rem;
+            }
+
+    .img-box {
+        height: 20rem;
+        width: 35rem;
+        margin-top: 12rem;
+        margin-left: 3rem;
+        border-radius: 5%;
+    }
+/* SECTION-2 - ABOUT US */
+
+/* SECTION-3 - OUR SERVICES */
+#section-3 {
+    width: 95%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 50rem;
+}
+
+.grid {
+    width:calc(100% + 5rem);
+    margin: 0 -2.5 2 0rem;
+ }
+
+ .grid > .grid-box {
+    height: 10rem;
+    float: left;
+    margin: 0 2rem 7rem;
+}
+    .box-full {
+        width:calc(100% - 5rem)
+    } 
+   
+    .box-half {
+        width: calc(50% - 5rem);
+    }
+
+    .box-third {
+        width:calc(33.33% - 5rem);
+    }
+
+    .box-quarter {
+        width: calc(25% - 5rem);
+    }
+
+    .fbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } /* Inainte de a folosi flex-box am incercat 
+        toate optiunile pentru a pune in mijloc imaginea
+        si sa si ramana acolo iniferent de marimea ecranului */
+
+    .h {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #caa880;
+    }
+
+    .serv-img {
+        width: 2.5rem;
+    }
+
+    .p {
+        text-align: center;
+        color: #3b4964;
+    }
+/* SECTION-3 - OUR SERVICES */
+
+/* SECTION-4 - CONTACT */
+#section-4 .contact-img {
+    background-image: url(/images/medi-3.jpg);
+    background-size: cover;
+    height: 10rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+    .contact-img p {
+        font-size: 1.8rem;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 3rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .contact-adr {
+        margin: 4rem 0rem 4rem 10rem;
+    }
+        .contact-adr > h1 {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .contact-adr > a {
+            text-decoration: none;
+        }
+/* SECTION-4 - CONTACT */
+
+footer {
+    height: 5rem;
+    text-align: center;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width: 1000px) {
+    html{
+        font-size: 8px;
+    }
+
+    header{
+        margin: 1rem 5rem;
+    }
+
+    #section-2 {
+    display: inline-block;
+    }
+
+    .text-box {
+        width: 80%;
+        margin-top: 5rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    .img-box {
+        height: 35%;
+        width: 80%;
+        margin-top: -9rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media (max-width:760px){
+    .box-third {
+        width: calc(100% - 5rem);
+    }
+
+    .grid > .grid-box {
+        padding-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    #section-4 {
+        padding-top: 20rem;
+    }
+        #section-4 p {
+            font-size: 1.2rem;
+            padding-top: 1rem;
+        }
+}
+
+@media(max-width: 650px) {
+
+    header{
+        margin: 1rem 3rem;
+    }
+
+    .navigation {
+        margin-top: 1.2rem;
+    }
+
+    .navigation a {
+        font-size: 1rem;
+    }
+
+    .text-box {
+    line-height: 1.8rem;
+    height: 18rem;
+    }
+
+    .img-box {
+    height: 50%;
+    }
+}
+
+@media(max-width:400px){
+
+    header{
+        margin: 1rem 2rem;
+        height: 5rem;
+        margin-bottom: -2rem;
+    }
+
+    .logo > img {
+        height: 40%;
+    }
+
+    .navigation {
+        margin-top: 0.5rem;
+
+    }
+
+    .navigation > a {
+        font-size: 0.8rem;
+        margin: 0rem
+    }
+    .grid > .grid-box {
+        padding-top: 0;
+        margin-bottom: 5rem;
+    }
+    
+    .text-box {
+        margin-top: 0.5rem; 
+        line-height: 18px;
+        height: 25rem;
+    }
+    
+    .img-box {
+        margin-top: -5rem;
+        height: 40%;
+    }
+    
+    #section-4 {
+        padding-top: 45rem;
+    }
+    
+    #section-3, #section-4{
+        width: 200px;
+    }
+    
+    .contact-adr {
+        margin-left: 25%;
+    }
+    
+    #section-4 p {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+}
+/* MEDIA QUERY */
